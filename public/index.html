@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Fitness Tracker</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <fb:login-button 
+        scope="public_profile,email"
+        onlogin="checkLoginState();">
+      </fb:login-button>
+      
+    </body>
+    <script>
+      
+      }
+      
+      window.fbAsyncInit = function() {
+      FB.init({
+      appId : '202831317315516',
+      cookie : true,
+      xfbml : true,
+      version : 'v2.8'
+      });
+      FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+      });
+      };
+      (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      function statusChangeCallback(response){
+      if(response.status === 'connected'){
+      console.log('Logged in and authenticated');
+      } else {
+      console.log('Not authenticated');
+      }
+      }window.fbAsyncInit = function() {
+      FB.init({
+      appId : '202831317315516',
+      cookie : true,
+      xfbml : true,
+      version : 'v2.8'
+      });
+      FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+      });
+      };
+      (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      function statusChangeCallback(response){
+      if(response.status === 'connected'){
+      console.log('Logged in and authenticated');
+      } else {
+      console.log('Not authenticated');
+      }
+      }
+      
+      </script>
+</html>
