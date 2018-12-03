@@ -12,7 +12,7 @@
     document.write("Total distance traveled today: " + totalDistance + " miles" + "<br />");
 
     const averageHR = prompt("Please enter your average heart rate(bmp):");
-    document.write("Average heart rate: " + totalDistance + " bmp" + "<br />");
+    document.write("Average heart rate: " + averageHR + " bmp" + "<br />");
 
     const age = prompt("Please enter your age:");
     document.write("Age: " + age + "<br />");
